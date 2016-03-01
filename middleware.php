@@ -1,14 +1,13 @@
 <?php
 
 //input from frontend + decode with assigned variables
-/**
+
 $jsonstr=$_POST['name'];
 $recieve = json_decode($jsonstr, true);
 
-$myfil=fopen("success.txt","w");
-**/
+
 echo json_encode(array('valid' => true)); 
-/**
+
 fwrite($myfil, $recieve);
 
 $ucid = $recieve["ucid"];
@@ -19,7 +18,7 @@ $output = array();
 $dba = array("ucid" => $ucid, "password" => $password);
 $njit = array("ucid" => $ucid, "password" => $password);
 
-/**url for logins
+//url for logins
 
 $dburl = " ";
 $njiturl = " ";
@@ -45,7 +44,7 @@ $njitresults = curl_exec($ch2);
 
 curl_close($ch2);
 
-**/ 
+ 
 
 
 ?>
