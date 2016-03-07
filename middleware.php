@@ -37,7 +37,7 @@ curl_close($ch2);
 
 
 //echo json_encode($output);
-echo json_encode(array('ucid'=>"Ve23", 'pwd'=>"redline16k"));
+echo json_encode(array('ucid'=>"Ve23", 'pwd'=>"wrong"));
 
 
 ?>
